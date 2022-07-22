@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>responsive desing</title>
+</head>
+<body class="cuerpo">
+    <header class="cabecera">
+        <h1>Responsive Desing</h1>
+        <h2>Esto tiene que adapatarse a todo tipo de pantallas</h2>
+        <nav class="navegador">
+            <a>Inicio</a>
+            <a>Login</a>
+            <a>nosotros</a>
+        </nav>
+    </header>
+    <main class="principal">
+        <h1>Mira esta flor</h1>
+        <picture>
+            <source srcset="{{url_for('static',filename='img_smallflower.jpg')}}" media="(max-width:480px)" class="img480"> <!--para celulares-->
+            <source srcset="{{url_for('static',filename='img_flowers.jpg')}}" media="(max-width: 1500px)"  class="img1500">
+            <source srcset="{{url_for('static',filename='flowers.jpg')}}" class="img">
+            <img src="img_smallflower.jpg" alt="Flowers"> 
+
+        </picture>
+    </main>
+    <aside class="barralateral">
+        <a>media query</a>
+        <a>responsive desing</a>
+        <a>un poco de star wars</a>
+
+
+    </aside>
+    <footer class="pie">
+        <h2>by brunetto pibe kralio</h2>
+
+    </footer>
+
+ <!--
+    <h1 style="font-size:5vw">Esta Flor de Prong....</h1>
+    <picture>
+        <source srcset="{{url_for('static',filename='img_smallflower.jpg')}}" media="(max-width: 600px)">
+        <source srcset="{{url_for('static',filename='img_flowers.jpg')}}" media="(max-width: 1500px)">
+        <source srcset="{{url_for('static',filename='flowers.jpg')}}">
+        <img src="img_smallflower.jpg" alt="Flowers"> alt es para que en caso de no cargar la imagen aparezca este mensaje
+        </picture>
+        <h2>Media Queries</h2>
+        <p>Resize the browser window.</p>
+
+        <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+        <div class="left">
+            <p>Left Menu</p>
+        </div>
+
+        <div class="main">
+            <p>Main Content</p>
+        </div>
+
+        <div class="right">
+            <p>Right Content</p>
+        </div>
+-->
+
+
+    
+</body>
+</html>

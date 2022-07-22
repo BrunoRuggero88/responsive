@@ -1,0 +1,78 @@
+
+.cuerpo{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1/2fr;
+  grid-template-areas: "cabe cabe cabe cabe"
+  "cuerp cuerp cuerp nav"
+  "cuerp cuerp cuerp nav"
+  "cuerp cuerp cuerp nav"
+  "py py py py";
+  height: 100%;
+  
+}
+.cabecera{
+  grid-area: cabe;
+  background-color: rgb(220, 220, 220);
+  
+  font-size:1vw;
+
+}
+.cabecera h1{
+  color: blue;
+  text-decoration: none;
+}
+
+.navegador{
+  background-color: blueviolet;
+  font-size:.2vw;
+}
+.cuerpo{
+  grid-area: cuerp;
+  background-color: aquamarine;
+
+
+}
+.barralateral{
+  grid-area: nav;
+  background-color: blue;
+}
+.pie{
+  grid-area: py;
+  background-color: orange;
+}
+.barralateral a{
+  background-color: brown;
+}
+/** {
+    box-sizing: border-box;
+  }
+  
+  .left {
+    background-color: #2196F3;
+    padding: 20px;
+    float: left;
+    width: 20%; /* The width is 20%, by default 
+  }
+  
+  .main {
+    background-color: #f1f1f1;
+    padding: 20px;
+    float: left;
+    width: 60%; /* The width is 60%, by default 
+  }
+  
+  .right {
+    background-color: #04AA6D;
+    padding: 20px;
+    float: left;
+    width: 20%; /* The width is 20%, by default 
+  }
+  
+  /* Use a media query to add a break point at 800px: 
+  @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller 
+    }
+  }
+/*
